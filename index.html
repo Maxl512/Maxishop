@@ -10,10 +10,21 @@
 </head>
 <body>
     <div class="container">
+        
+
+        <div class="menu-container-hid">
+            <a class="menu-container-hid__div-a" href="#">Home</a>
+            <a class="menu-container-hid__div-a" href="#">About us</a>
+            <a class="menu-container-hid__div-a" href="#">Product</a>
+            <a class="menu-container-hid__div-a" href="#">Shop</a>
+            <a class="menu-container-hid__div-a" href="#">Our Service</a>
+            <hr color="#111">
+            <button class="menu-container-hid__div-a" onclick="hideUp();">Close</button>
+        </div>
 
         <nav class="menu-container">
             <div class="menu-container__div">
-                <span class="menu-container__div-span">20% off Entire Purchase Promo code: offT20</span>
+                <span class="menu-container__div-span">20% off Entire Purchase Promo code: <b>offT20</b></span>
             </div>
             <div class="menu-container__div">
                 <a class="menu-container__div-a" href="#">MY ACCOUNT</a>
@@ -36,16 +47,8 @@
                 <a class="menu-container--sticky__div-a" href="#">Shop</a>
                 <a class="menu-container--sticky__div-a" href="#">Our Service</a>
             </div>
-            <button class="menu-container--sticky__button">ShowUp</button>
+            <button onclick="showUp();" class="menu-container--sticky__button">ShowUp</button>
         </nav>
-
-        <div id="menu-container-hid">
-            <a class="menu-container--sticky__div-a" href="#">Home</a>
-            <a class="menu-container--sticky__div-a" href="#">About us</a>
-            <a class="menu-container--sticky__div-a" href="#">Product</a>
-            <a class="menu-container--sticky__div-a" href="#">Shop</a>
-            <a class="menu-container--sticky__div-a" href="#">Our Service</a>
-        </div>
 
         <main class="content-container">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut reprehenderit, minus pariatur aliquam quod est perspiciatis quas voluptatibus quae asperiores! Vitae quia ipsa eos vel, quo facilis ea ab commodi?</p>
