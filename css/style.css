@@ -78,9 +78,6 @@
         display: inline-block;  
         border: none;
     }
-    .menu-container-hid{
-        display: none;
-    }
     .content-container{
         flex-basis: 100vw;
         background-color: #373;
@@ -172,10 +169,6 @@
     .menu-container--sticky__button{
         display: none;  
     }
-    
-    .menu-container-hid{
-        display: none;
-    }
     .menu-container--sticky__div-a{
         text-decoration: none;
         color: black;
@@ -204,6 +197,16 @@
         grid-template-areas: 
             "header header header header"
             "headerS headerS headerS headerS"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
+            "aside main main main"
             "aside main main main"
             "footer footer footer footer";
         
@@ -259,12 +262,9 @@
         flex-wrap: wrap;
         flex-direction: row;
 
-        position: sticky;
-        top: 0;
-        left: 0;
-        padding: 0% 3%;
+        padding: 0% 2%;
         align-items: center;
-        font-size: 1.3em;
+        font-size: 1em;
 
         background-color: white;
         color: black;
@@ -274,7 +274,7 @@
         flex-basis: 30vw;
     }
     .menu-container--sticky__div-img{
-        max-width: 40%;
+        max-width: 30%;
         margin: 0% 30%;
 
         object-fit: contain;
@@ -288,18 +288,13 @@
     .menu-container--sticky__button{
         display: none;  
     }
-    
-    .menu-container-hid{
-        display: none;
-    }
     .menu-container--sticky__div-a{
         text-decoration: none;
         color: black;
-        font-size: 1.2em;
-        padding: .5em;
+        font-size: 1.3em;
+        padding: 0em 1em;
     }
     /* Styling the menu with the property sticky */
-
 
 
     .content-container{
@@ -318,4 +313,10 @@
         height: 10vh;
     }
 
+}
+
+    
+#menu-container-hid{
+    visibility: hidden !important;
+    position: absolute !important;
 }
